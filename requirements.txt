@@ -1,0 +1,11 @@
+# Зависимости Discord-бота. Установка:  pip install -r requirements.txt
+#
+# discord.py[voice] = сам discord.py + голосовые зависимости:
+#   - PyNaCl (<1.6) — шифрование голоса
+#   - davey       — протокол DAVE (сквозное шифрование голоса), обязателен в discord.py 2.7+
+# yt-dlp   = достаёт аудиопоток из YouTube и сотен других сайтов (+ поиск по словам)
+# requests = читает список треков с публичной embed-страницы Spotify (без ключей/Premium)
+discord.py[voice]>=2.6,<3.0
+yt-dlp>=2024.0.0
+requests>=2.28.0
+python-dotenv>=1.0.0
